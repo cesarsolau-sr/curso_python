@@ -1,4 +1,5 @@
 import os 
+import sys
 
 def formato_tamaño_legible(tamaño_bytes):
     """Convierte un tamaño en bytes a un formato legible (KB, MB, GB)."""
@@ -21,5 +22,7 @@ for item in os.listdir():
 lista_ordena = sorted(lista_archivos,key=lambda d: d['peso'], reverse=True)
 for arch in lista_ordena:
     print(f"archivo:{arch['nombre']} peso:{formato_tamaño_legible(arch['peso'])} ")
+
+print(sys.path)
 
 
