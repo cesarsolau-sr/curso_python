@@ -1,0 +1,16 @@
+def fibonacci_generator(n):
+    a, b = 0 , 1
+    cantidad = 0
+    while cantidad < n:
+        #suma = a + b
+        yield a
+        cantidad +=1
+        suma = a + b 
+        a = b
+        b = suma
+
+#print("iniciando")
+gen = fibonacci_generator(8)
+for x in gen:
+    print(x)
+
