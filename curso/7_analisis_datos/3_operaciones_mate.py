@@ -1,0 +1,16 @@
+import numpy as np
+
+array = np.random.randint(101, size=(4,5))
+media_total = np.mean(array)
+desviacion_estandar = np.std(array)
+valor_maximo = np.max(array)
+valor_minimo = np.min(array)
+suma_filas =np.sum(array,axis=1)
+media_columnas = np.mean(array, axis=0)
+print(array)
+print(media_total)
+print(desviacion_estandar)
+print(valor_maximo)
+print(valor_minimo)
+print(suma_filas)
+print(media_columnas)
